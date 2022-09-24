@@ -9,7 +9,7 @@ class Footer extends React.Component {
         <footer className="text-center lg:text-left bg-gray-100 text-gray-600">
           <div className="px-6 pt-6">
             <form action="">
-              <div className="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">
+              <div className="grid md:grid-cols-3 gird-cols-1 gap-4 justify-center items-center">
                 <div className="md:ml-auto md:mb-6">
                   <p className="text-gray-800">
                     <strong>Sign up for our newsletter</strong>
