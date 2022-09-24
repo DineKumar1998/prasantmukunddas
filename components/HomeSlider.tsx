@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Circle } from 'react-feather'
 
 const Images = ['1.JPG', '2.JPG', '3.JPG', '4.png']
 

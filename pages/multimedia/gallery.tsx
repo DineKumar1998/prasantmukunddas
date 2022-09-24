@@ -1,6 +1,4 @@
 import { server } from '../../config'
-import { Tooltip, Alert } from 'flowbite-react'
-import { useState } from 'react'
 import Dropdown from '../../components/DropdownComponent'
 
 const Gallery = (props: any) => {

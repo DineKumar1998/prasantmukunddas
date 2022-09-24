@@ -1,9 +1,7 @@
 import Script from 'next/script'
 import Head from 'next/head'
-import { ReactNode } from 'react'
 import Footer from './Footer'
 import Header from './header/index'
-import { Html } from 'next/document'
 
 function Layout({ children, title }: any) {
   return (

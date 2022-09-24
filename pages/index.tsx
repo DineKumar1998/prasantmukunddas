@@ -1,16 +1,8 @@
-import type { NextPage } from 'next'
 import Link from 'next/link'
 import { Book, BookOpen, Feather, Volume2, Youtube } from 'react-feather'
-import { fetchQuery } from '../utils'
 import Carousel from '../components/HomeSlider'
 import CountUp from 'react-countup'
 import { server } from '../config'
-
-const colorDensity = {
-  0: 'bg-gray-300',
-  1: 'bg-gray-500',
-  2: 'bg-gray-100',
-}
 
 const Home = (props: any) => {
   const { slider, sections, innerImage, gatewaryImage, videoRecords } =
