@@ -1,0 +1,76 @@
+.book-container {
+  .book-banner {
+    filter: brightness(60%);
+  }
+
+  .download-button {
+    position: absolute;
+    top: 40%;
+    z-index: 20;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .button {
+      color: white;
+      font-weight: bolder;
+      width: 20%;
+      border: 2px solid transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+
+      &:hover {
+        border: 2px solid white;
+        background-color: rgba($color: #9333ea, $alpha: 0.4);
+      }
+    }
+  }
+}
+
+// ** Gallery
+.img__container {
+  position: relative;
+
+  &:hover>img {
+    transform: scale(1.2);
+    filter: blur(1px);
+    transition: transform 1s;
+  }
+
+  &:hover>.img__dots {
+    display: block;
+    z-index: 1;
+  }
+
+  .img__dots {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  .img__title {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    height: 15%;
+    color: white;
+    background-color: #06020976;
+  }
+}
+
+// Video Component
+.youtube__video-list {
+  .youtube__video {
+    &:hover>.youtube__img {
+      display: block;
+      z-index: 1;
+    }
+
+    &:hover>img {
+      opacity: 0.8;
+    }
+  }
+
+}

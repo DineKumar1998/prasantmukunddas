@@ -1,0 +1,134 @@
+{
+  "sections": [
+    {
+      "url": "audio.jpg",
+      "sectionName": "Audio"
+    },
+    {
+      "url": "gallery.jpeg",
+      "sectionName": "Gallery"
+    },
+    {
+      "url": "marry_devotee.jpeg",
+      "sectionName": "Marry Devotee"
+    },
+    {
+      "url": "previous_katha.jpeg",
+      "sectionName": "Previous Katha"
+    },
+    {
+      "url": "schedule.jpeg",
+      "sectionName": "Schedule"
+    },
+    {
+      "url": "video.jpeg",
+      "sectionName": "Video"
+    }
+  ],
+  "slider": ["1.JPG", "2.JPG", "3.JPG", "4.png"],
+  "innerImage": "innerImage.JPG",
+  "gatewaryImage": "gateway_of_spiritual_world.jpg",
+  "videoRecords": [
+    {
+      "totalVideos": 23,
+      "type": "KATHA",
+      "linkOne": {
+        "slug": "/katha/videos",
+        "name": "Videos"
+      },
+      "linkTwo": {
+        "slug": "/katha/list",
+        "name": "List"
+      }
+    },
+    {
+      "totalVideos": 203,
+      "type": "PUBLIC REVIEW",
+      "linkOne": {
+        "slug": "/public-review/videos",
+        "name": "Videos"
+      },
+      "linkTwo": {
+        "slug": "/public-review/form",
+        "name": "Form"
+      }
+    },
+    {
+      "totalVideos": 123,
+      "type": "ISKCON AUTHORITY REVIEW",
+      "linkOne": {
+        "slug": "/iskcon-authority-reviews/videos",
+        "name": "Videos"
+      },
+      "linkTwo": {
+        "slug": "/iskcon-authority-reviews/letter",
+        "name": "Letter"
+      }
+    }
+  ],
+  "multimedia": {
+    "gallery_images": [
+      {
+        "imageName": "image1.jpeg",
+        "title": "About the image one"
+      },
+      {
+        "imageName": "image1.jpeg",
+        "title": "About the image one"
+      },
+      {
+        "imageName": "image1.jpeg",
+        "title": "About the image one"
+      },
+      {
+        "imageName": "image1.jpeg",
+        "title": "About the image one"
+      },
+      {
+        "imageName": "image1.jpeg",
+        "title": "About the image one"
+      },
+      {
+        "imageName": "image1.jpeg",
+        "title": "About the image one"
+      },
+      {
+        "imageName": "image1.jpeg",
+        "title": "About the image one"
+      }
+    ],
+    "books_image": "books.jpeg",
+    "audios": [
+      {
+        "title": "Title1 ",
+        "speaker": "HG Prasant mukund",
+        "postOn": "12/22/21, 02:33:30",
+        "link": "http://audio-link-here.com"
+      },
+      {
+        "title": "Title 2 ",
+        "speaker": "HG Prasant mukund",
+        "postOn": "12/22/21, 02:33:30",
+        "link": "http://audio-link-here.com"
+      },
+      {
+        "title": "Title 3 ",
+        "speaker": "HG Prasant mukund",
+        "postOn": "12/22/21, 02:33:30",
+        "link": "http://audio-link-here.com"
+      },
+      {
+        "title": "Title 4 ",
+        "speaker": "HG Prasant mukund",
+        "postOn": "12/22/21, 02:33:30",
+        "link": "http://audio-link-here.com"
+      },
+      {
+        "title": "Title 5 ",
+        "speaker": "HG Prasant mukund",
+        "postOn": "12/22/21, 02:33:30",
+        "link": "http://audio-link-here.com"
+      }
+    ]
+  }
+}

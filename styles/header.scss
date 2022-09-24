@@ -1,0 +1,24 @@
+@layer components {
+    .nav-item {
+        @apply flex px-4 py-2 hover:bg-slate-100 hover:font-normal cursor-pointer rounded;
+    }
+    .child-items {
+        @apply shadow px-3 py-2;
+    }
+}
+.child-items {
+    min-width: 200px;
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    background-color: $white;
+}
+
+.nav-item {
+    position: relative;
+    z-index: 12;
+    &:hover .child-items{
+        display: block;
+    }
+}

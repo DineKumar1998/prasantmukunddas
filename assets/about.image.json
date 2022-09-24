@@ -1,0 +1,22 @@
+{
+    "ISKCON": {
+        "image": "ISKCON.png",
+        "title": "ISKCON ()"
+    },
+    "HHGKG": {
+        "image": "Gopal_Krishna_Goswami.jpeg",
+        "title": "Gopal Krishna Goswami Maharaj"
+    },
+    "Chaitanya": {
+        "image": "Lord_Chaitanya.jpeg",
+        "title": "Lord Chaitanya Mahaprabhu"
+    },
+    "HGPMD": {
+        "image": "Prashant_Mukund_Pr.jpeg",
+        "title": "Prashant Mukund Prabhu"
+    },
+    "Prabhupada": {
+        "image": "Srila_Prabhupada.jpeg",
+        "title": "Srila A. C. Bhaktivedant Swami Prabhupada"
+    }
+}

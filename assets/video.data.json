@@ -1,0 +1,27 @@
+{
+    "youtube": [
+        {
+            "bannerImg": "katha-1.jpeg",
+            "title": "Video tilte should be here..",
+            "language": "English",
+            "duration": "01:02:20 H"
+        },
+        {
+            "bannerImg": "katha-2.jpeg",
+            "title": "Second Video title",
+            "language": "English",
+            "duration": "01:02:20 H"
+        },
+        {
+            "bannerImg": "katha-1.jpeg",
+            "title": "Third Video title",
+            "language": "",
+            "duration": "01:02:20 H"
+        },{
+            "bannerImg": "katha-2.jpeg",
+            "title": "Fourth video title",
+            "language": "English",
+            "duration": "01:02:20 H"
+        }
+    ]
+}
