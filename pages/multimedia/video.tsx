@@ -52,7 +52,7 @@ const Videos = (props: any) => {
     </>
   )
 }
-export async function getStaticProps(context: any) {
+export async function getServerSideProps(context: any) {
   const res = await fetch(`${server}/images`, {
     method: 'POST',
     body: 'youtubeVideos',
