@@ -2,7 +2,6 @@ import { server } from '../../config'
 
 const Videos = (props: any) => {
   const { youtube } = JSON.parse(props.videos)
-  console.log(youtube)
   return (
     <>
       <div>
