@@ -12,17 +12,23 @@
     justify-content: center;
 
     .button {
+      border-radius: 100px;
       color: white;
       font-weight: bolder;
-      width: 20%;
       border: 2px solid transparent;
       display: flex;
+      font-size: 60px;
+      padding: 20px;
       justify-content: center;
       align-items: center;
-      font-size: 35px;
+
+      svg {
+        width: 60px;
+        height: 60px;
+      }
 
       &:hover {
-        border: 2px solid white;
+        border-color: white;
         background-color: rgba($color: #9333ea, $alpha: 0.4);
       }
     }
@@ -73,4 +79,17 @@
     }
   }
 
+}
+
+@media only screen and (max-width: 550px) {
+  .download-button {
+    .button {
+      padding: 10px !important;
+      font-size: small !important;
+      svg {
+          width: 20px !important;
+          height: 20px !important;
+      }
+    }
+  }
 }

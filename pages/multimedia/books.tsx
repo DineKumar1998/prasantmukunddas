@@ -5,10 +5,10 @@ import { server } from '../../config'
 const Book = (props: any) => {
   const { multimedia } = JSON.parse(props.images);
   return (
-    <div className="book-container">
+    <div className="book-container relative">
       <div className="download-button">
-        <div className="button">
-          <DownloadCloud size={40} className="mr-3" />
+        <div className="button md:text-[50px] text-xs p">
+          <DownloadCloud className="mr-3" />
           <Link href={'https://www.google.co.in'} target="_parent"> Download </Link>
         </div>
       </div>

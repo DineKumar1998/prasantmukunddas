@@ -3,25 +3,52 @@
         {
             "bannerImg": "katha-1.jpeg",
             "title": "Video tilte should be here..",
+            "src": "https://www.youtube.com/embed/37dSi8jbFAM",
             "language": "English",
             "duration": "01:02:20 H"
         },
         {
             "bannerImg": "katha-2.jpeg",
             "title": "Second Video title",
+            "src": "https://www.youtube.com/embed/QMTIM6UeOwg",
             "language": "English",
             "duration": "01:02:20 H"
         },
         {
             "bannerImg": "katha-1.jpeg",
             "title": "Third Video title",
+            "src": "https://www.youtube.com/embed/zyFdI-atk-s",
             "language": "",
             "duration": "01:02:20 H"
         },{
-            "bannerImg": "katha-2.jpeg",
-            "title": "Fourth video title",
-            "language": "English",
-            "duration": "01:02:20 H"
+          "bannerImg": "katha-2.jpeg",
+          "title": "Fourth video title",
+          "src": "https://www.youtube.com/embed/euuGcMaIEZU",
+          "language": "English",
+          "duration": "01:02:20 H"
+        }
+    ],
+    "youtube_playlists": [
+        {
+            "bannerImg": "katha-1.jpeg",
+            "title": "Video tilte should be here..",
+            "playlistLink": "https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3",
+            "totalVideos": 10,
+            "description": "Description should be here..."
+        },
+        {
+          "bannerImg": "katha-2.jpeg",
+          "title": "Second Video title",
+          "playlistLink": "https://www.youtube.com/embed/QMTIM6UeOwg",
+          "totalVideos": 22,
+          "description": "Description should be here..."
+        },
+        {
+          "bannerImg": "katha-1.jpeg",
+          "title": "Third Video title",
+          "playlistLink": "https://www.youtube.com/embed/zyFdI-atk-s",
+          "totalVideos": 129,
+          "description": "Description should be here..."
         }
     ]
 }

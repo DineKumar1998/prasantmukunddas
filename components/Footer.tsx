@@ -6,12 +6,12 @@ class Footer extends React.Component {
   render(): React.ReactNode {
     return (
       <React.Fragment>
-        <footer className="text-center lg:text-left bg-gray-100 text-gray-600">
+        <footer className="text-center lg:text-left bg-gray-100 text-slate-600">
           <div className="px-6 pt-6">
             <form action="">
               <div className="grid md:grid-cols-3 gird-cols-1 gap-4 justify-center items-center">
                 <div className="md:ml-auto md:mb-6">
-                  <p className="text-gray-800">
+                  <p className="text-slate-800">
                     <strong>Sign up for our newsletter</strong>
                   </p>
                 </div>
@@ -38,7 +38,7 @@ class Footer extends React.Component {
               <span>Get connected with us on social networks:</span>
             </div>
             <div className="flex justify-center">
-              <a href="#!" className="mr-6 text-gray-600">
+              <a href="#!" className="mr-6 text-slate-600">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -72,7 +72,7 @@ class Footer extends React.Component {
                   ></path>
                 </svg>
               </a>
-              <a href="#!" className="mr-6 text-gray-600">
+              <a href="#!" className="mr-6 text-slate-600">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -89,7 +89,7 @@ class Footer extends React.Component {
                   ></path>
                 </svg>
               </a>
-              <a href="#!" className="mr-6 text-gray-600">
+              <a href="#!" className="mr-6 text-slate-600">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -106,7 +106,7 @@ class Footer extends React.Component {
                   ></path>
                 </svg>
               </a>
-              <a href="#!" className="mr-6 text-gray-600">
+              <a href="#!" className="mr-6 text-slate-600">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -123,7 +123,7 @@ class Footer extends React.Component {
                   ></path>
                 </svg>
               </a>
-              <a href="#!" className="text-gray-600">
+              <a href="#!" className="text-slate-600">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -171,12 +171,12 @@ class Footer extends React.Component {
                   Schedule
                 </h6>
                 <p className="mb-4">
-                  <Link href="/schedule/schedule" className="text-gray-600">
+                  <Link href="/schedule/schedule" className="text-slate-600">
                     Schedule
                   </Link>
                 </p>
                 <p className="mb-4">
-                  <Link href="/schedule/calendar" className="text-gray-600">
+                  <Link href="/schedule/calendar" className="text-slate-600">
                     Calendar
                   </Link>
                 </p>
@@ -188,7 +188,7 @@ class Footer extends React.Component {
                 <p className="mb-4">
                   <a
                     href="https://iskcondesiretree.com/"
-                    className="text-gray-600"
+                    className="text-slate-600"
                   >
                     ISKCON descire tree
                   </a>
@@ -196,7 +196,7 @@ class Footer extends React.Component {
                 <p className="mb-4">
                   <a
                     href="https://prabhupadabooks.com/"
-                    className="text-gray-600"
+                    className="text-slate-600"
                   >
                     Prabhupada books
                   </a>

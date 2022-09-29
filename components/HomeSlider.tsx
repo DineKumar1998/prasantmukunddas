@@ -1,82 +1,70 @@
-import { useEffect, useState } from 'react'
+import Carousel from 'react-multi-carousel';
 
-const Images = ['1.JPG', '2.JPG', '3.JPG', '4.png']
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const Carousel = ({ images }: any) => {
-  const [index, setIndex] = useState(1)
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => {
-        if (images.length === index) {
-          return 1
-        }
-        return prevIndex + 1
-      })
-    }, 5000)
+// import required modules
+import { EffectCards, EffectCoverflow, EffectCube, EffectFade, Navigation } from "swiper";
 
-    return () => clearInterval(interval)
-  }, [index])
 
-  const prevAndNext = (e: any) => {
-    const next = e.target.getAttribute('data-carousel-button-next')
-    const prev = e.target.getAttribute('data-carousel-button-prev')
+const CarouselComponent = ({ images }: any) => {
 
-    if (next) {
-      setIndex((prevIndex) => {
-        if (images.length === prevIndex) {
-          return 1
-        }
-        return prevIndex + 1
-      })
-    }
-    if (prev) {
-      setIndex((prevIndex) => {
-        if (prevIndex === 1) {
-          return images.length
-        }
-        return prevIndex - 1
-      })
-    }
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      paritialVisibilityGutter: 60,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+      paritialVisibilityGutter: 50,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      paritialVisibilityGutter: 30,
+    },
   }
 
   return (
-    <div className="carousel" data-carousel>
-      <button
-        className="carousel-button prev"
-        data-carousel-button-prev
-        onClick={prevAndNext}
+    <div>
+      <Swiper navigation={true} effect="fade" modules={[Navigation, EffectFade]} className="mySwiper" style={{ maxHeight: 700 }}>
+      {images.map((image: string, index: number) => (
+          <SwiperSlide key={index} className="flex justify-center align-middle overflow-hidden">
+            <img
+              draggable={false}
+              src={`./images/slider/${image}`}
+              style={{ minWidth: '100%', minHeight: '100%', flexShrink: 0}}
+              alt={image}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      {/* <Carousel
+        responsive={responsive}
+        ssr
+        itemClass="image-item"
+        deviceType={'desktop'}
+        draggable
       >
-        &#10140;
-      </button>
-      <button
-        className="carousel-button next"
-        data-carousel-button-next
-        onClick={prevAndNext}
-      >
-        &#10140;
-      </button>
-
-      <ul>
-        <li className="slide" data-active key={index}>
-          <img
-            src={`./images/slider/${images[index - 1]}`}
-            className="w-full"
-            alt="Wild Landscape"
-          />
-        </li>
-      </ul>
-
-      {/* <ul className="carousel-indicators">
-        {images.map((e, ind) => {
-          if (ind + 1 === index) {
-            return <Circle key={ind} fill="#fff" stroke="#fff" size={16} />
-          }
-          return <Circle key={ind} stroke="#fff" size={16} className="px-1" />
-        })}
-      </ul> */}
+        {images.map((image: string, index: number) => (
+          <div key={index} className="h-full">
+            <img
+              draggable={false}
+              style={{ width: '100%', position: 'relative'}}
+              src={`./images/slider/${image}`}
+              alt={image}
+            />
+          </div>
+        ))}
+      </Carousel> */}
     </div>
   )
 }
 
-export default Carousel
+export default CarouselComponent

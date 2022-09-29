@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { Book, BookOpen, Feather, Volume2, Youtube } from 'react-feather'
-import Carousel from '../components/HomeSlider'
 import CountUp from 'react-countup'
 import { server } from '../config'
+import CarouselComponent from '../components/HomeSlider'
 
 const Home = (props: any) => {
   const { slider, sections, innerImage, gatewaryImage, videoRecords } =
@@ -12,54 +12,54 @@ const Home = (props: any) => {
       <section>
         {/** SLider */}
 
-        <Carousel images={slider} />
+        <CarouselComponent images={slider} />
 
         {/* <Image /> */}
-        <div className="grid md:grid-cols-3">
-          <div className="flex items-center p-6 md:flex-row bg-white shadow-lg">
-            <Youtube size={70} stroke="#FF0100" />
+        <div className="grid md:grid-cols-3" >
+          <div className="flex items-center px-4 h-[200px] md:h-[300px] bg-slate-500 md:flex-row shadow-lg">
+            <Youtube size={70} className='text-slate-900' />
             <div className="p-6  flex flex-col text-center items-center">
-              <h2 className="text-2xl">YOUTUBE LIVE VIDEOS</h2>
-              <p className="text-sm">Watch Live Katha On This Channel</p>
+              <h2 className="text-3xl font-bold text-slate-900">YOUTUBE LIVE VIDEOS</h2>
+              <p className="text-sm text-slate-900">Watch Live Katha On This Channel</p>
             </div>
           </div>
           {/* </div> */}
 
-          <div className="flex items-center p-6 md:flex-row bg-white shadow-lg">
-            <BookOpen size={70} stroke="#9333EA" />
+          <div className="flex items-center px-4 h-[200px] md:h-[300px] md:flex-row bg-slate-900 shadow-lg">
+            <BookOpen size={70} stroke="#fff" />
             <div className="p-6 flex flex-col text-center items-center">
-              <h2 className="text-2xl">UPCOMING KATHA</h2>
-              <p className="text-sm"></p>
+              <h2 className="text-3xl text-slate-200 font-bold">UPCOMING KATHA</h2>
             </div>
           </div>
 
-          <div className="flex items-center p-6 md:flex-row bg-white shadow-lg">
-            <Volume2 size={70} />
+          <div className="flex items-center px-4 h-[200px] md:h-[300px] md:flex-row bg-slate-800 shadow-lg">
+            <Volume2 size={70} className='text-slate-500' />
             <div className="p-6  flex flex-col text-center items-center">
-              <h2 className="text-2xl">KATHA HIGHLIGHT</h2>
-              <p className="text-sm">Watch Live Katha On This Channel</p>
+              <h2 className="text-3xl font-bold text-slate-500">KATHA HIGHLIGHT</h2>
+              <p className="text-sm text-slate-500">Watch Live Katha On This Channel</p>
             </div>
           </div>
         </div>
-
+        
         <div
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/${innerImage}")`,
-            backgroundPosition: 'top center',
+            backgroundPosition: 'center center',
             backgroundAttachment: 'fixed',
-            backgroundSize: '100%',
+            backgroundRepeat: "no-repeat",
+            backgroundSize: '100% 100%',
           }}
-          className="flex justify-center items-center p-4 md:h-[500px] h-[500px]"
+          className="flex justify-center items-center p-4 md:h-[600px]"
         >
-          <div className="text-white text-center ">
-            <h1 className="text-[20px] md:text-[40px] ">
-              WELCOME TO
-              <span className="text-[20px] inline-block md:inline-flex md:ml-4 break-all md:break-normal md:text-[45px] font-extrabold mb-10 text-purple-300 outline-dotted p-2">
+          <div className="text-white text-center my-4 ">
+            <h1 className="text-[40px] md:text-[80px] ">
+              WELCOME TO <br />
+              <span className="text-[20px] inline-block md:inline-flex md:ml-4 break-all md:break-normal md:text-[45px] font-extrabold mb-8 text-purple-300 outline-dotted p-2">
                 PRASHANTMUKUNDADAS.COM
               </span>
             </h1>
             <br />
-            <p className="text-sm md:text-base">
+            <p className="text-sm md:text-base max-w-3xl">
               “THIS SERVICE IS SELFLESSLY DONE BY ME FOR SADHANA AND WORSHIP
               WHICH IS KNOWN AS BHAKTI YOGA THROUGH KATHA GLOBALLY FOR THE
               WELFARE OF THE SOCIETY.”
@@ -83,7 +83,7 @@ const Home = (props: any) => {
                   'border-l-8 border-t-8 border-gray-800 shadow other-image-item'
                 }
               />
-              <h3 className="text-white font-extrabold text-[40px] absolute top-2/4 text-center w-full">
+              <h3 className="text-white font-extrabold text-[40px] absolute top-[95px] md:top-[130px] text-center w-full">
                 {image.sectionName}
               </h3>
             </div>
