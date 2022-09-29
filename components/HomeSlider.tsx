@@ -1,5 +1,3 @@
-import Carousel from 'react-multi-carousel';
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -8,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { EffectCards, EffectCoverflow, EffectCube, EffectFade, Navigation } from "swiper";
+import { EffectFade, Navigation } from "swiper";
 
 
 const CarouselComponent = ({ images }: any) => {
