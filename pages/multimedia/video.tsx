@@ -11,7 +11,7 @@ const Videos = (props: any) => {
 
   return (
     <div>
-      <h2 className="md:m-10 m-5 md:text-[35px] text-[18px] font-bold capitalize bg-slate-100 py-2 px-5  border rounded text-slate-800">{state.title}</h2>
+      <h2 className="m-5 text-[20px] font-bold capitalize bg-slate-100 py-2 px-5  border rounded text-slate-800">{state.title}</h2>
 
       <div className="aspect-w-16 aspect-h-9 m-5 md:m-10">
         <iframe
@@ -26,7 +26,7 @@ const Videos = (props: any) => {
       </div>
 
       {/* Videos list */}
-      <div className="youtube__video-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-5 md:mx-10">
+      <div className="youtube__video-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-5 md:mx-10 mb-10">
         {youtube.map((video: any, index: number) => {
           return (
             <section
@@ -38,7 +38,7 @@ const Videos = (props: any) => {
               </section>
               <img
                 src={`/images/youtube-video-banner/${video.bannerImg}`}
-                className="md:h-[200px] w-full "
+                className="md:h-[180px] w-full "
                 height={180}
               />
               <section className="px-2 py-2">
@@ -57,7 +57,6 @@ const Videos = (props: any) => {
           )
         })}
       </div>
-      <div className="hover:text-orange-500"></div>
     </div>
   )
 }

@@ -1,83 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  
-}
-.carousel {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-
-  .slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
-      filter: brightness(60%);
-    }
-  }
-  .slide[data-active] {
-    opacity: 1;
-  }
-  .carousel-button {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    font-size: 2rem;
-    padding: 20px;
-    transform: translateY(-50%);
-    color: rgba($color: #fff, $alpha: 0.5);
-    &:focus {
-      outline: 1px solid $white;
-    }
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .carousel-button.prev,
-  .carousel-button.next {
-    &:hover,
-    &:focus {
-      color: $white;
-    }
-  }
-
-  .carousel-button.prev {
-    left: 1rem;
-    transform: rotate(180deg);
-    top: 41.5%;
-  }
-  .carousel-button.next {
-    right: 1rem;
-  }
-  .carousel-indicators {
-    position: absolute;
-    left: 45%;
-    top: 80%;
-    width: 20%;
-    display: flex;
-    .indicator {
-      &::before {
-        content: 'o';
-        font-size: 20px;
-        padding-left: 10px;
-        color: rgba($color: #fff, $alpha: 0.5);
-      }
-    }
-  }
 }
 
-@media only screen and (max-width: 768px) {
-  .carousel {
-    height: 50vh;
-  }
-}
 
 .other-image-items {
   font-family: Arial, Helvetica, sans-serif;

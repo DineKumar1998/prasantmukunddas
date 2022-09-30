@@ -37,7 +37,7 @@ class Header extends React.Component {
                   href="#"
                   className="text-lg tracking-widest text-gray-900 rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
                 >
-                  Mukund
+                  PrasantMukund
                   <span className="text-purple-700 font-extrabold">DAS</span>
                 </a>
                 <button className="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
@@ -63,7 +63,7 @@ class Header extends React.Component {
                 {navigation.map((route) => {
                   return (
                     <li className="nav-item" key={route.id}>
-                      <Link href={route.navLink || ''}>{route.title}</Link>
+                     <Link href={route.navLink || ''}>{route.title}</Link>
                       {route.children && (
                         <svg
                           className="text-gray-400 h-5 group-hover:text-gray-500"

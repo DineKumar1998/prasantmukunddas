@@ -51,20 +51,14 @@ export default [
         title: 'Youtube Kath Playlist',
         icon: <Circle size={13} />,
         navLink: '/multimedia/youtube-playlist',
-      },
-      {
-        id: 'live-video',
-        title: 'Live Video',
-        icon: <Circle size={13} />,
-        navLink: '/multimedia/video',
-      },
+      }
     ],
   },
   {
     id: 'quotes',
     title: 'Quotes',
     icon: <FileText size={16} />,
-    nvaLink: '/quotes',
+    navLink: '/quotes',
   },
   {
     id: 'activities',
@@ -79,25 +73,6 @@ export default [
       },
     ],
   },
-  // {
-  //   id: 'schedule',
-  //   title: 'Schedule',
-  //   icon: <Table size={16} />,
-  //   children: [
-  //     {
-  //       id: 'schedule',
-  //       title: 'Schedule',
-  //       icon: <Circle size={13} />,
-  //       navLink: '/schedule',
-  //     },
-  //     {
-  //       id: 'calendar',
-  //       title: 'Calendar',
-  //       icon: <Circle size={13} />,
-  //       navLink: '/schedule/calendar',
-  //     },
-  //   ],
-  // },
   {
     id: 'dham-yatra',
     title: 'Dham यात्रा',
@@ -117,31 +92,6 @@ export default [
       },
     ],
   },
-  // {
-  //   id: 'useful-links',
-  //   title: 'Useful links',
-  //   icon: <ExternalLink size={16} />,
-  //   children: [
-  //     {
-  //       id: 'iskcon-desire-tree',
-  //       title: 'ISKCON desire tree',
-  //       icon: <Circle size={13} />,
-  //       navLink: 'https://iskcondesiretree.com/',
-  //     },
-  //     {
-  //       id: 'prabhupada-books',
-  //       title: 'Prabhupada books',
-  //       icon: <Circle size={13} />,
-  //       navLink: 'https://prabhupadabooks.com/',
-  //     },
-  //     {
-  //       id: 'vedic-names',
-  //       title: 'Vedic names',
-  //       icon: <Circle size={13} />,
-  //       navLink: 'https://names.iskcondesiretree.com/',
-  //     },
-  //   ],
-  // },
   {
     id: 'about',
     title: 'About',

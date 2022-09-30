@@ -3,10 +3,9 @@ import { server } from "../../config";
 
 const YoutubePlaylist = (props: any) => {
     const { youtube_playlists } = JSON.parse(props.videos);
-
     return (
       <>
-        <div className="md:px-10 px-5 pt-10 pb-5 text-slate-800">
+        <div className="md:px-10 px-5 py-5 text-slate-800">
           <h2 className="text-[20px] flex items-center font-bold capitalize bg-slate-100 py-0 border px-5 rounded text-slate-800">
             <img src={"https://cdn-icons-png.flaticon.com/512/400/400425.png"} className="h-14 mr-2" alt="Youtube" /> playlist..
           </h2>
@@ -54,7 +53,7 @@ export async function getServerSideProps(context: any) {
   
     return {
       props: {
-        videos,
+        videos
       },
     }
   }
