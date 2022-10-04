@@ -5,11 +5,11 @@ const Audio = (props: any) => {
   const { multimedia } = JSON.parse(props.images)
 
   return (
-    <>
-      <h2 className="m-5 text-[20px] font-bold capitalize bg-slate-100 py-2 px-5  border rounded text-slate-800">
+    <div className='p-5'>
+      <h2 className=" text-[20px] font-bold capitalize bg-slate-100 py-2 px-5  border rounded text-slate-800">
         Recorded audios lectures
       </h2>
-      <div className="grid grid-cols-1 mx-20 my-10">
+      <div className="grid grid-cols-1 m-5 md:mx-20 md:my-10">
         <table className="table-auto rounded">
           <thead className=" bg-slate-100 border">
             <tr>
@@ -35,7 +35,7 @@ const Audio = (props: any) => {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   )
 }
 

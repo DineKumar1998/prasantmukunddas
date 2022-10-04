@@ -11,7 +11,6 @@ const Gallery = (props: any) => {
   });
 
   const prevImage = (index: number, label: string) => {
-    console.log(index, multimedia.gallery_images.length)
     index === 1
       ? setState((prev) => ({
           index: multimedia.gallery_images.length,
@@ -21,14 +20,13 @@ const Gallery = (props: any) => {
   }
 
   const nextImage = (index: number, label: string) => {
-    console.log(label, index)
     index === multimedia.gallery_images.length ? setState(() => ({ index: 1, label })) : setState(() => ({ index: index + 1, label}))
   }
 
   const closeImageView = () => setState(() => ({ index: 0, label: ''}))
 
   return (
-    <>
+    <div className='p-5'>
       {/* Overlay image */}
       {state.index > 0 ? (
         <div className="overlay_container text-white">
@@ -60,7 +58,7 @@ const Gallery = (props: any) => {
           />
         </div>
       ) : null}
-      <h2 className="m-5 text-[20px] font-bold capitalize bg-slate-100 py-2 px-5  border rounded text-slate-800">
+      <h2 className="text-[20px] font-bold capitalize bg-slate-100 py-2 px-5  border rounded text-slate-800">
         Gallery
       </h2>
       <div className="flex justify-center md:m-10 m-5 gallery__images">
@@ -82,7 +80,7 @@ const Gallery = (props: any) => {
           })}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

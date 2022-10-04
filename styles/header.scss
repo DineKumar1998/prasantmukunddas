@@ -20,5 +20,11 @@
     &:hover .child-items{
         display: block;
     }
+}
 
+.nav-overlay {
+    background-color: rgba(0, 0, 0, 0.424);
+    nav.show {
+        display: block;
+    }
 }

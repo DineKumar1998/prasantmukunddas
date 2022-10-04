@@ -10,8 +10,8 @@ const Videos = (props: any) => {
   })
 
   return (
-    <div>
-      <h2 className="m-5 text-[20px] font-bold capitalize bg-slate-100 py-2 px-5  border rounded text-slate-800">{state.title}</h2>
+    <div className='p-5'>
+      <h2 className="text-[20px] font-bold capitalize bg-slate-100 py-2 px-5  border rounded text-slate-800">{state.title}</h2>
 
       <div className="aspect-w-16 aspect-h-9 m-5 md:m-10">
         <iframe

@@ -7,7 +7,7 @@ const Book = (props: any) => {
   return (
     <div className="book-container relative">
       <div className="download-button">
-        <div className="button md:text-[50px] text-xs p">
+        <div className="button md:text-[50px] text-xs">
           <DownloadCloud className="mr-3" />
           <Link href={'https://www.google.co.in'} target="_parent"> Download </Link>
         </div>

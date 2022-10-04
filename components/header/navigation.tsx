@@ -75,22 +75,9 @@ export default [
   },
   {
     id: 'dham-yatra',
-    title: 'Dham यात्रा',
+    title: 'Dham_यात्रा',
     icon: <Table size={16} />,
-    children: [
-      {
-        id: 'old-yatra',
-        title: 'Old Dham Yatra',
-        icon: <Circle size={13} />,
-        navLink: '/dham-yatra/old-yatra',
-      },
-      {
-        id: 'new-registration',
-        title: 'New Dham Yatra register',
-        icon: <Circle size={13} />,
-        navLink: '/dham-yatra/new-registration',
-      },
-    ],
+    navLink: '/dham-yatra',
   },
   {
     id: 'about',
