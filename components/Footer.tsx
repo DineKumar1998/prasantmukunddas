@@ -143,7 +143,7 @@ class Footer extends React.Component {
             </div>
           </div>
           <div className="mx-6 py-10 text-center md:text-left">
-            <div className="grid grid-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
               <div className="">
                 <h6
                   className="
@@ -164,21 +164,6 @@ class Footer extends React.Component {
                   is associated with ISKCON last 15 years. He is Vedic Bhakti
                   Shastri from ISKCON (MHE- Mayapur institute of Higher
                   Education)
-                </p>
-              </div>
-              <div className="">
-                <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                  Schedule
-                </h6>
-                <p className="mb-4">
-                  <Link href="/schedule/schedule" className="text-slate-600">
-                    Schedule
-                  </Link>
-                </p>
-                <p className="mb-4">
-                  <Link href="/schedule/calendar" className="text-slate-600">
-                    Calendar
-                  </Link>
                 </p>
               </div>
               <div className="">

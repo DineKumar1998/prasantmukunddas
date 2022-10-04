@@ -50,8 +50,8 @@ class Header extends React.Component<{}, State> {
 
   render(): React.ReactNode {
     return (
-      <div onMouseDown={this.overflowClick} className={classNames('fixed z-[11] top-0 w-full lg:h-auto h-screen', {'nav-overlay': this.state.show})}>
-        <header className="bg-white  shadow-lg w-full lg:px-10 px-4 py-2 lg:flex items-center min-h-[56px]">
+      <div onMouseDown={this.overflowClick} className={classNames('fixed z-[11] top-0 w-full md:h-auto h-screen', {'nav-overlay': this.state.show})}>
+        <header className="bg-white  shadow-lg w-full md:px-10 px-4 py-2 md:flex items-center min-h-[56px]">
         <div className="flex items-center justify-between w-full">
           <a
             href="/"
@@ -62,7 +62,7 @@ class Header extends React.Component<{}, State> {
           </a>
           <button
             onClick={this.toggleMenu}
-            className="lg:hidden bg-slate-200 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+            className="md:hidden bg-slate-200 p-2 rounded-lg focus:outline-none focus:shadow-outline"
           >
             <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
               <path
@@ -80,11 +80,11 @@ class Header extends React.Component<{}, State> {
             </svg>
           </button>
         </div>
-        <nav className={classNames({ show: this.state.show, 'lg:flex hidden': !this.state.show }, 'lg:w-full h-full flex lg:mt-0 mt-1')}>
+        <nav className={classNames({ show: this.state.show, 'md:flex hidden': !this.state.show }, 'md:w-full h-full flex md:mt-0 mt-1')}>
           {navigation.map((route) => {
             return (
               <Link href={route.navLink || ''} key={route.id}>
-                <li className="nav-item lg:py-2" >
+                <li className="nav-item md:py-2" >
                   {route.title}
                   {route.children && (
                     <svg
