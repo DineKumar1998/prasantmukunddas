@@ -159,7 +159,6 @@ const data = [
   },
 ]
 const EAarti = () => {
-    console.log(data)
     return (
       <>
         <div className="p-5">
