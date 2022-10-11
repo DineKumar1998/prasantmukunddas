@@ -165,19 +165,25 @@ const EAarti = () => {
         <div className="p-5">
           <div className="grid md:grid-cols-2 grid-cols-1">
             {data.map((section, index: number) => {
-              return <div key={index}>
-              <section>
-               <img src={"/images/e-aarti/"+section.image} className="w-full"  alt={section.title}/>
-               </section>
-              <section>
-                  {section.hyms.map((hym, ind) => (
-                    <section key={ind}>
-                      <h5>{hym.title}</h5>
-                      <h5>{hym.hym}</h5>
-                    </section>
-                  ))}
-              </section>
-              </>
+              return (
+                <div key={index}>
+                  <section>
+                    <img
+                      src={'/images/e-aarti/' + section.image}
+                      className="w-full"
+                      alt={section.title}
+                    />
+                  </section>
+                  <section>
+                    {section.hyms.map((hym, ind) => (
+                      <section key={ind}>
+                        <h5>{hym.title}</h5>
+                        <h5>{hym.hym}</h5>
+                      </section>
+                    ))}
+                  </section>
+                </div>
+              )
             })}
           </div>
         </div>
