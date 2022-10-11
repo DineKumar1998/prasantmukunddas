@@ -6,14 +6,14 @@ const ISKCON: NextPage = (props: any) => {
   { image, title } = ISKCON;
 
   return (
-    <section>
+    <section className='md:p-12 p-5'>
       <div className="flex justify-center">
         <img
           src={`/images/about/${image}`}
-          className="p-2 border mt-4 md:w-[500px] shadow md:h-[300px]"          
+          className="p-2 border mb-4 md:w-[500px] shadow md:h-[300px]"          
         />
       </div>
-      <div className="p-12">
+      <div>
         <h4 className="text-[25px] text-purple-700 font-semibold border-b-[1.5px] mb-5">
           {title}
         </h4>

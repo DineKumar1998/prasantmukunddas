@@ -6,14 +6,14 @@ const SrilaPrabhupada: NextPage = (props: any) => {
   { image, title } = Prabhupada;
 
   return (
-    <section>
+    <section className='md:p-12 p-5'>
       <div className="flex justify-center">
         <img
           src={`/images/about/${image}`}
-          className="p-2 border mt-4 md:w-[300px] shadow md:h-[300px]"
+          className="p-2 border my-4 md:w-[300px] shadow md:h-[300px]"
         />
       </div>
-      <div className="p-12">
+      <div>
         <h4 className="text-[25px] text-purple-700 font-semibold border-b-[1.5px]">
           {title}
         </h4>

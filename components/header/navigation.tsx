@@ -61,17 +61,10 @@ export default [
     navLink: '/quotes',
   },
   {
-    id: 'activities',
-    title: 'Activities',
+    id: 'e-aarti',
+    title: 'E-Aarti',
     icon: <Activity size={16} />,
-    children: [
-      {
-        id: 'e-aarti',
-        title: 'E-Aarti',
-        icon: <Circle size={13} />,
-        navLink: '/activities/e-aarti',
-      },
-    ],
+    navLink: '/e-aarti',
   },
   {
     id: 'dham-yatra',

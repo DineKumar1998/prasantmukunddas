@@ -7,29 +7,23 @@ class Footer extends React.Component {
     return (
       <React.Fragment>
         <footer className="text-center lg:text-left bg-gray-100 text-slate-600">
-          <div className="px-6 pt-6">
-            <form action="">
-              <div className="grid md:grid-cols-3 gird-cols-1 gap-4 justify-center items-center">
-                <div className="md:ml-auto md:mb-6">
-                  <p className="text-slate-800">
-                    <strong>Sign up for our newsletter</strong>
-                  </p>
-                </div>
+          <div className="px-5 pt-6">
+            <form action="" className='md:flex justify-evenly items-center'>
+              <p className="text-slate-800 my-4">
+                <strong>Sign up for our newsletter</strong>
+              </p>
 
-                <div className="md:mb-6">
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Email address"
-                  />
-                </div>
+              <div className='flex md:w-1/2'>
+              <input
+                type="email"
+                className="form-control mr-4 py-1 px-3 md:w-1/2"
+                id="exampleFormControlInput1"
+                placeholder="Email address"
+              />
 
-                <div className="md:mr-auto mb-6">
-                  <button type="button" className="btn">
-                    Subscribe
-                  </button>
-                </div>
+              <button type="button" className="btn">
+                Subscribe
+              </button>
               </div>
             </form>
           </div>
@@ -143,7 +137,7 @@ class Footer extends React.Component {
             </div>
           </div>
           <div className="mx-6 py-10 text-center md:text-left">
-            <div className="grid grid-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <div className="grid grid-2 md:grid-cols-3 lg:grid-cols-3s gap-8">
               <div className="">
                 <h6
                   className="

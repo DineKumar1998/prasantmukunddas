@@ -50,7 +50,7 @@ class Header extends React.Component<{}, State> {
 
   render(): React.ReactNode {
     return (
-      <div onMouseDown={this.overflowClick} className={classNames('fixed z-[11] top-0 w-full md:h-auto h-screen', {'nav-overlay': this.state.show})}>
+      <div onMouseDown={this.overflowClick} className={classNames('fixed z-[11] top-0 w-full md:h-auto bg-slate-500', {'nav-overlay': this.state.show})}>
         <header className="bg-white  shadow-lg w-full md:px-10 px-4 py-2 md:flex items-center min-h-[56px]">
         <div className="flex items-center justify-between w-full">
           <a
