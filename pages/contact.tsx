@@ -56,8 +56,8 @@ const Contact: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
-            <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
+          <div className="w-full lg:w-1/2 xl:w-5/12px-4">
+            <div className="bg-white relative rounded-lg p-4 md:p-8 shadow-lg">
               <form>
                 <div className="mb-6">
                   <input

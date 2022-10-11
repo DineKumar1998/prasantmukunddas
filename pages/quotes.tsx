@@ -14,16 +14,16 @@ const Quotes = (props: any) => {
             return (
               <div
                 key={index}
-                className="p-6 break-inside-avoid mb-6 text-slate-700 text-base bg-white rounded-lg border border-gray-200 shadow-md"
+                className="p-6 break-inside-avoid mb-6 bg-white text-white text-base rounded-lg border border-gray-200 shadow-md"
               >
                 <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
                   <span className="font-bold text-lg">&#8220;</span>
                   {quote.quote}
                   <span className="font-bold text-lg">&#8221;</span>
                 </p>
-                <p className="md:flex justify-between">
-                  <span className="font-bold text-slate-400">{quote.date}</span>
-                  <span className="border bg-slate-100 px-2 rounded-md font-bold flex items-center text-purple-700">
+                <p className="md:grid grid-cols-3 flex flex-col items-end">
+                  <span className="font-bold text-slate-400 md:pb-0 pb-2">{quote.date}</span>
+                  <span className="border col-span-2 bg-slate-100 px-2 rounded-md font-bold flex items-center text-purple-700">
                     {quote.author} <MessageCircle size={20} className="ml-2" />
                   </span>
                 </p>
