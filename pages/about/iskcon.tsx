@@ -2,20 +2,19 @@ import { NextPage } from 'next'
 import { server } from '../../config'
 
 const ISKCON: NextPage = (props: any) => {
-  const { ISKCON } = JSON.parse(props.images),
-  { image, title } = ISKCON;
-
+  const { ISKCON } = JSON.parse(props.images);
+ 
   return (
     <section className='md:p-12 p-5'>
       <div className="flex justify-center">
         <img
-          src={`/images/about/${image}`}
+          src={`/images/about/${ISKCON.image}`}
           className="p-2 border mb-4 md:w-[500px] shadow md:h-[300px]"          
         />
       </div>
       <div>
         <h4 className="text-[25px] text-purple-700 font-semibold border-b-[1.5px] mb-5">
-          {title}
+          {ISKCON.title}
         </h4>
         <div className="md:text-base">
           <p className="text-justify">
