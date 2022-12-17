@@ -205,7 +205,7 @@ class DhamYatra extends React.Component<Props, State> {
   }
 }
 
-export async function getStaticProps(context: any) {
+export async function getServerSideProps(context: any) {
   // fetch the blog posts from the mock API
   const res = await fetch(`${server}/images`, {
     method: 'POST',
