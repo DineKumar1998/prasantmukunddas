@@ -68,7 +68,7 @@ export default [
   },
   {
     id: 'dham-yatra',
-    title: 'Dham_यात्रा',
+    title: 'Dham यात्रा',
     icon: <Table size={16} />,
     navLink: '/dham-yatra',
   },

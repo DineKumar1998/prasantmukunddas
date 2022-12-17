@@ -17,7 +17,7 @@ const Book = (props: any) => {
   )
 }
 
-export async function getServerSideProps(context: any) {
+export async function getStaticProps(context: any) {
   // fetch the blog posts from the mock API
   const res = await fetch(`${server}/images`)
   const images = await res.json()

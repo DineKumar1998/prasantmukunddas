@@ -11,7 +11,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const requestType = req.body;
+  const { requestType } = JSON.parse(req.body);
 
   //Find the absolute path of the json directory
   const jsonDirectory = path.join(process.cwd(), 'assets');
@@ -21,7 +21,9 @@ export default async function handler(
   if (requestType === 'about') {
     fileName = '/about.image.json';
   } else if (requestType === "youtubeVideos") {
-    fileName = '/video.data.json'
+    fileName = '/video.data.json';
+  } else if (requestType === 'oldYatra') {
+    fileName = '/yatra.list.json';
   }
 
   //Read the json data file image.data.json

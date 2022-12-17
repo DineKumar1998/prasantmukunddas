@@ -55,3 +55,15 @@ body {
     color: white;
   }
 }
+
+// ** Dham-Yatra CSS
+.dham-yatra {
+  .banner {
+      filter: brightness(75%);
+  }
+
+  form {
+    width: 100%;
+    max-width: 400px;
+  }
+}

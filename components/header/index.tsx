@@ -84,7 +84,7 @@ class Header extends React.Component<{}, State> {
           {navigation.map((route) => {
             return (
               <Link href={route.navLink || ''} key={route.id}>
-                <li className="nav-item md:py-2" >
+                <li className="nav-item md:py-2 whitespace-nowrap	" >
                   {route.title}
                   {route.children && (
                     <svg

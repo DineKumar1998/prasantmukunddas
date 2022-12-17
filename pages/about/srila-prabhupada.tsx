@@ -1,12 +1,12 @@
 import { NextPage } from 'next'
-import { server } from '../../config';
+import { server } from '../../config'
 
 const SrilaPrabhupada: NextPage = (props: any) => {
   const { Prabhupada } = JSON.parse(props.images),
-  { image, title } = Prabhupada;
+    { image, title } = Prabhupada
 
   return (
-    <section className='md:p-12 p-5'>
+    <section className="md:p-12 p-5">
       <div className="flex justify-center">
         <img
           src={`/images/about/${image}`}
@@ -177,10 +177,10 @@ const SrilaPrabhupada: NextPage = (props: any) => {
   )
 }
 
-export async function getServerSideProps(context: any) {
+export async function getStaticProps(context: any) {
   const res = await fetch(`${server}/images`, {
     method: 'POST',
-    body: 'about',
+    body: JSON.stringify({ requestType: 'about' }),
   })
   const images = await res.json()
 

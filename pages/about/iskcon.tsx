@@ -186,10 +186,10 @@ const ISKCON: NextPage = (props: any) => {
   )
 }
 
-export async function getServerSideProps(context: any) {
+export async function getStaticProps(context: any) {
   const res = await fetch(`${server}/images`, {
     method: 'POST',
-    body: 'about',
+    body: JSON.stringify({ requestType: 'about' }),
   })
   const images = await res.json()
 
