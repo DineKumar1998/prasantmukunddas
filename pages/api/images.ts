@@ -24,6 +24,8 @@ export default async function handler(
     fileName = '/video.data.json';
   } else if (requestType === 'oldYatra') {
     fileName = '/yatra.list.json';
+  } else if (requestType === "multimedia") {
+    fileName = '/multimedia.json'
   }
 
   //Read the json data file image.data.json

@@ -1,10 +1,13 @@
 import { server } from '../../config'
 import Dropdown from '../../components/DropdownComponent'
 import { useState } from 'react'
-import { ArrowLeft, ArrowRight, X } from 'react-feather'
+import { ArrowLeft, ArrowRight, X } from 'react-feather';
 
-const Gallery = (props: any) => {
-  const { multimedia } = JSON.parse(props.images)
+type Props = {
+  gallery_images: Array<{ imageName: string, title: string}>
+}
+
+const Gallery = ({ gallery_images }: Props) => {
   const [state, setState] = useState({
     index: 0,
     label: ''
@@ -34,12 +37,12 @@ const Gallery = (props: any) => {
             size={30}
             className="rounded-full cursor-pointer bg-gray-300 p-1 text-slate-800 hover:text-purple-500"
             strokeWidth={4}
-            onClick={e => prevImage(state.index, multimedia.gallery_images[state.index - 1].title)}
+            onClick={e => prevImage(state.index, gallery_images[state.index - 1].title)}
           />
           <div className="w-10/12 h-full flex justify-center items-center flex-col">
             <img
               src={`/images/gallery/${
-                multimedia.gallery_images[state.index - 1].imageName
+                gallery_images[state.index - 1].imageName
               }`}
               className="overlay_image md:w-9/12 md:h-2/3"
             />
@@ -48,7 +51,7 @@ const Gallery = (props: any) => {
             size={30}
             className="rounded-full cursor-pointer bg-gray-300 p-1 hover:text-purple-500 text-slate-800"
             strokeWidth={4}
-            onClick={e => nextImage(state.index, multimedia.gallery_images[state.index - 1].title)}
+            onClick={e => nextImage(state.index, gallery_images[state.index - 1].title)}
           />
           <X
             size={30}
@@ -63,7 +66,7 @@ const Gallery = (props: any) => {
       </h2>
       <div className="flex justify-center md:m-10 m-5 gallery__images">
         <div className="gallery__images-container md:columns-3 columns-1">
-          {multimedia.gallery_images.map((image: any, index: number) => {
+          {gallery_images.map((image: any, index: number) => {
             return (
               <section
                 key={index}
@@ -84,16 +87,20 @@ const Gallery = (props: any) => {
   )
 }
 
+
 export async function getServerSideProps(context: any) {
   // fetch the blog posts from the mock API
-  const res = await fetch(`${server}/images`)
-  const images = await res.json()
+  const res = await fetch(`${server}/images`, {
+    method: "POST",
+    body: JSON.stringify({ requestType: 'multimedia' }),
+  });
+
+  const multimedia = await res.json();
 
   return {
     props: {
-      images,
+      gallery_images: JSON.parse(multimedia).gallery_images,
     },
   }
 }
-
 export default Gallery

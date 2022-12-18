@@ -1,0 +1,67 @@
+{
+  "books": {
+    "bannerImg": "books.jpeg"
+  },
+  "gallery_images": [
+    {
+      "imageName": "image1.jpeg",
+      "title": "About the image one, About the image one, About the image one, About the image one, About the image oneAbout the image oneAbout the image oneAbout the image oneAbout the image oneAbout the image oneAbout the image one"
+    },
+    {
+      "imageName": "image1.jpeg",
+      "title": "About the image one"
+    },
+    {
+      "imageName": "image1.jpeg",
+      "title": "About the image one"
+    },
+    {
+      "imageName": "image1.jpeg",
+      "title": "About the image one"
+    },
+    {
+      "imageName": "image1.jpeg",
+      "title": "About the image one"
+    },
+    {
+      "imageName": "image1.jpeg",
+      "title": "About the image one"
+    },
+    {
+      "imageName": "image1.jpeg",
+      "title": "About the image one"
+    }
+  ],
+  "audios": [
+    {
+      "title": "Title1 ",
+      "speaker": "HG Prasant mukund",
+      "postOn": "12/22/21, 02:33:30",
+      "link": "http://audio-link-here.com"
+    },
+    {
+      "title": "Title 2 ",
+      "speaker": "HG Prasant mukund",
+      "postOn": "12/22/21, 02:33:30",
+      "link": "http://audio-link-here.com"
+    },
+    {
+      "title": "Title 3 ",
+      "speaker": "HG Prasant mukund",
+      "postOn": "12/22/21, 02:33:30",
+      "link": "http://audio-link-here.com"
+    },
+    {
+      "title": "Title 4 ",
+      "speaker": "HG Prasant mukund",
+      "postOn": "12/22/21, 02:33:30",
+      "link": "http://audio-link-here.com"
+    },
+    {
+      "title": "Title 5 ",
+      "speaker": "HG Prasant mukund",
+      "postOn": "12/22/21, 02:33:30",
+      "link": "http://audio-link-here.com"
+    }
+  ]
+}

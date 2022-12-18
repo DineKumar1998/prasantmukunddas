@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import { server } from '../../config'
 
-const Audio = (props: any) => {
-  const { multimedia } = JSON.parse(props.images)
+type Props = {
+  audios: Array<{ title: string, speaker: string, postOn: string, link: string }>
+}
+
+const Audio = ({ audios }: Props) => {
 
   return (
     <div className='p-5'>
@@ -20,7 +23,7 @@ const Audio = (props: any) => {
             </tr>
           </thead>
           <tbody>
-            {multimedia.audios.map((audio: any, index: number) => (
+            {audios.map((audio: any, index: number) => (
               <tr key={index} className="border text-center rounded">
                 <td className="w-1/4 p-3">{audio.title}</td>
                 <td className="w-1/4 ">{audio.speaker}</td>
@@ -43,13 +46,14 @@ export async function getServerSideProps(context: any) {
   // fetch the blog posts from the mock API
   const res = await fetch(`${server}/images`, {
     method: "POST",
-    body: JSON.stringify({ requestType: 'youtubeVideos' }),
-  })
-  const images = await res.json()
+    body: JSON.stringify({ requestType: 'multimedia' }),
+  });
+
+  const multimedia = await res.json();
 
   return {
     props: {
-      images,
+      audios: JSON.parse(multimedia).audios,
     },
   }
 }
