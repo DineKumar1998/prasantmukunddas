@@ -185,7 +185,7 @@ const Home = (props: any) => {
     )
 }
 
-export async function getServerSideProps(context: any) {
+export async function getStaticProps(context: any) {
   // 
   const res = await fetch(`${server}/images`)
   const images = await res.json()
