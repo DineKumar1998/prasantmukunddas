@@ -16,14 +16,14 @@ const Gallery = ({ gallery_images }: Props) => {
   const prevImage = (index: number, label: string) => {
     index === 1
       ? setState((prev) => ({
-          index: multimedia.gallery_images.length,
+          index: gallery_images.length,
           label: label,
         }))
       : setState((prev) => ({ index: index - 1, label }))
   }
 
   const nextImage = (index: number, label: string) => {
-    index === multimedia.gallery_images.length ? setState(() => ({ index: 1, label })) : setState(() => ({ index: index + 1, label}))
+    index === gallery_images.length ? setState(() => ({ index: 1, label })) : setState(() => ({ index: index + 1, label}))
   }
 
   const closeImageView = () => setState(() => ({ index: 0, label: ''}))
